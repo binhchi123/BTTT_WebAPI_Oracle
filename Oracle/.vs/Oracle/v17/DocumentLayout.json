@@ -1,0 +1,135 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\ASP .NET Core\\API\\Oracle\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{21DB20E5-D004-4970-AD68-250619507D8C}|Oracle_api\\Oracle_api.csproj|d:\\asp .net core\\api\\oracle\\oracle_api\\controllers\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21DB20E5-D004-4970-AD68-250619507D8C}|Oracle_api\\Oracle_api.csproj|solutionrelative:oracle_api\\controllers\\billscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21DB20E5-D004-4970-AD68-250619507D8C}|Oracle_api\\Oracle_api.csproj|d:\\asp .net core\\api\\oracle\\oracle_api\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21DB20E5-D004-4970-AD68-250619507D8C}|Oracle_api\\Oracle_api.csproj|solutionrelative:oracle_api\\globalusing.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21DB20E5-D004-4970-AD68-250619507D8C}|Oracle_api\\Oracle_api.csproj|d:\\asp .net core\\api\\oracle\\oracle_api\\models\\viewmodels\\hoadonviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21DB20E5-D004-4970-AD68-250619507D8C}|Oracle_api\\Oracle_api.csproj|solutionrelative:oracle_api\\models\\viewmodels\\hoadonviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21DB20E5-D004-4970-AD68-250619507D8C}|Oracle_api\\Oracle_api.csproj|d:\\asp .net core\\api\\oracle\\oracle_api\\models\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21DB20E5-D004-4970-AD68-250619507D8C}|Oracle_api\\Oracle_api.csproj|solutionrelative:oracle_api\\models\\hoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21DB20E5-D004-4970-AD68-250619507D8C}|Oracle_api\\Oracle_api.csproj|d:\\asp .net core\\api\\oracle\\oracle_api\\models\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21DB20E5-D004-4970-AD68-250619507D8C}|Oracle_api\\Oracle_api.csproj|solutionrelative:oracle_api\\models\\chitiethoadon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{21DB20E5-D004-4970-AD68-250619507D8C}|Oracle_api\\Oracle_api.csproj|d:\\asp .net core\\api\\oracle\\oracle_api\\models\\viewmodels\\chitiethoadonviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{21DB20E5-D004-4970-AD68-250619507D8C}|Oracle_api\\Oracle_api.csproj|solutionrelative:oracle_api\\models\\viewmodels\\chitiethoadonviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 255,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "GlobalUsing.cs",
+              "DocumentMoniker": "D:\\ASP .NET Core\\API\\Oracle\\Oracle_api\\GlobalUsing.cs",
+              "RelativeDocumentMoniker": "Oracle_api\\GlobalUsing.cs",
+              "ToolTip": "D:\\ASP .NET Core\\API\\Oracle\\Oracle_api\\GlobalUsing.cs",
+              "RelativeToolTip": "Oracle_api\\GlobalUsing.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T03:41:09.611Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Hoadon.cs",
+              "DocumentMoniker": "D:\\ASP .NET Core\\API\\Oracle\\Oracle_api\\Models\\Hoadon.cs",
+              "RelativeDocumentMoniker": "Oracle_api\\Models\\Hoadon.cs",
+              "ToolTip": "D:\\ASP .NET Core\\API\\Oracle\\Oracle_api\\Models\\Hoadon.cs",
+              "RelativeToolTip": "Oracle_api\\Models\\Hoadon.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T02:34:25.044Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Chitiethoadon.cs",
+              "DocumentMoniker": "D:\\ASP .NET Core\\API\\Oracle\\Oracle_api\\Models\\Chitiethoadon.cs",
+              "RelativeDocumentMoniker": "Oracle_api\\Models\\Chitiethoadon.cs",
+              "ToolTip": "D:\\ASP .NET Core\\API\\Oracle\\Oracle_api\\Models\\Chitiethoadon.cs",
+              "RelativeToolTip": "Oracle_api\\Models\\Chitiethoadon.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T02:34:19.782Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "HoaDonViewModel.cs",
+              "DocumentMoniker": "D:\\ASP .NET Core\\API\\Oracle\\Oracle_api\\Models\\ViewModels\\HoaDonViewModel.cs",
+              "RelativeDocumentMoniker": "Oracle_api\\Models\\ViewModels\\HoaDonViewModel.cs",
+              "ToolTip": "D:\\ASP .NET Core\\API\\Oracle\\Oracle_api\\Models\\ViewModels\\HoaDonViewModel.cs",
+              "RelativeToolTip": "Oracle_api\\Models\\ViewModels\\HoaDonViewModel.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAewAwAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T02:23:10.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ChiTietHoaDonViewModel.cs",
+              "DocumentMoniker": "D:\\ASP .NET Core\\API\\Oracle\\Oracle_api\\Models\\ViewModels\\ChiTietHoaDonViewModel.cs",
+              "RelativeDocumentMoniker": "Oracle_api\\Models\\ViewModels\\ChiTietHoaDonViewModel.cs",
+              "ToolTip": "D:\\ASP .NET Core\\API\\Oracle\\Oracle_api\\Models\\ViewModels\\ChiTietHoaDonViewModel.cs",
+              "RelativeToolTip": "Oracle_api\\Models\\ViewModels\\ChiTietHoaDonViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-09T02:23:09.407Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "BillsController.cs",
+              "DocumentMoniker": "D:\\ASP .NET Core\\API\\Oracle\\Oracle_api\\Controllers\\BillsController.cs",
+              "RelativeDocumentMoniker": "Oracle_api\\Controllers\\BillsController.cs",
+              "ToolTip": "D:\\ASP .NET Core\\API\\Oracle\\Oracle_api\\Controllers\\BillsController.cs",
+              "RelativeToolTip": "Oracle_api\\Controllers\\BillsController.cs",
+              "ViewState": "AgIAABQBAAAAAAAAAAAgwCcBAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-08T08:09:00.897Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedHeight": 145,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
