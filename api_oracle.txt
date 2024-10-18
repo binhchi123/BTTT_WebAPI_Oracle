@@ -1,0 +1,112 @@
+CREATE TABLE LoaiSanPham(
+    LoaiSanPhamId INT GENERATED AS IDENTITY PRIMARY KEY,
+    TenLoaiSanPham VARCHAR2(100)
+);
+
+CREATE TABLE SanPham (
+    SanPhamId INT GENERATED AS IDENTITY PRIMARY KEY,
+    LoaiSanPhamId INT,
+    TenSanPham VARCHAR2(100),
+    GiaThanh NUMBER,
+    MoTa VARCHAR2(100),
+    NgayHetHan DATE,
+    KyHieuSanPham VARCHAR2(100),
+    FOREIGN KEY (LoaiSanPhamId) REFERENCES LoaiSanPham(LoaiSanPhamId)
+);
+
+CREATE TABLE KhachHang(
+    KhachHangId INT GENERATED AS IDENTITY PRIMARY KEY,
+    HoTen VARCHAR2(100),
+    NgaySinh DATE,
+    Sdt VARCHAR2(10)
+);
+
+CREATE TABLE HoaDon(
+    HoaDonId INT GENERATED AS IDENTITY PRIMARY KEY,
+    KhachHangId INT,
+    TenHoaDon VARCHAR2(100),
+    MaGiaoDich VARCHAR2(100),
+    ThoiGianTao DATE,
+    ThoiGianCapNhat DATE,
+    GhiChu VARCHAR2(200),
+    TongTien NUMBER,
+    FOREIGN KEY (KhachHangId) REFERENCES KhachHang(KhachHangId)
+);
+
+CREATE TABLE ChiTietHoaDon(
+    ChiTietHoaDonId INT GENERATED AS IDENTITY PRIMARY KEY,
+    HoaDonId INT,
+    SanPhamId INT,
+    SoLuong INT,
+    DVT VARCHAR2(100),
+    ThanhTien NUMBER,
+    FOREIGN KEY (HoaDonId) REFERENCES HoaDon(HoaDonId),
+    FOREIGN KEY (SanPhamId) REFERENCES SanPham(SanPhamId)
+);
+
+-- them du lieu cho bang LoaiSanPham
+INSERT INTO LoaiSanPham(TenLoaiSanPham) VALUES ('Rau');
+INSERT INTO LoaiSanPham(TenLoaiSanPham) VALUES ('Quả');
+INSERT INTO LoaiSanPham(TenLoaiSanPham) VALUES ('Bánh');
+
+-- them du lieu cho bang SanPham
+INSERT INTO SanPham(LoaiSanPhamId, TenSanPham, GiaThanh, Mota, NgayHetHan, KyHieuSanPham) VALUES (1, 'Rau cải thảo', 23000, 'rau sạch', SYSDATE, 'CT001');
+INSERT INTO SanPham(LoaiSanPhamId, TenSanPham, GiaThanh, Mota, NgayHetHan, KyHieuSanPham) VALUES (1, 'Rau muống', 18000, 'rau sạch', SYSDATE, 'M001');
+INSERT INTO SanPham(LoaiSanPhamId, TenSanPham, GiaThanh, Mota, NgayHetHan, KyHieuSanPham) VALUES (2, 'Quả dưa hấu', 12000, 'quả ngọt', SYSDATE, 'DH001');
+INSERT INTO SanPham(LoaiSanPhamId, TenSanPham, GiaThanh, Mota, NgayHetHan, KyHieuSanPham) VALUES (2, 'Quả táo', 25000, 'quả ngọt', SYSDATE, 'T001');
+INSERT INTO SanPham(LoaiSanPhamId, TenSanPham, GiaThanh, Mota, NgayHetHan, KyHieuSanPham) VALUES (3, 'Bánh oreo', 13000, 'bánh ngon', SYSDATE, 'O001');
+INSERT INTO SanPham(LoaiSanPhamId, TenSanPham, GiaThanh, Mota, NgayHetHan, KyHieuSanPham) VALUES (3, 'Bánh Choco Pie', 45000, 'bánh ngon', SYSDATE, 'CP001');
+
+-- them du lieu cho bang KhachHang
+INSERT INTO KhachHang(HoTen, NgaySinh, Sdt) VALUES ('Hoàng Thị Khánh Linh', '09-OCT-03', '0987654321');
+INSERT INTO KhachHang(HoTen, NgaySinh, Sdt) VALUES ('Đinh Quỳnh Anh', '16-AUG-03', '0987654322');
+INSERT INTO KhachHang(HoTen, NgaySinh, Sdt) VALUES ('Phạm Tuấn Huy', '19-NOV-03', '0987654323');
+
+-- them du lieu cho bang HoaDon
+INSERT INTO HoaDon(KhachHangId, TenHoaDon, MaGiaoDich, ThoiGianTao, ThoiGianCapNhat, GhiChu, TongTien) VALUES (1, 'HDDH', '20241008_001', SYSDATE, SYSDATE+1, 'ABCD', 36000);
+INSERT INTO HoaDon(KhachHangId, TenHoaDon, MaGiaoDich, ThoiGianTao, ThoiGianCapNhat, GhiChu, TongTien) VALUES (2, 'HDCT', '20241008_002', SYSDATE, SYSDATE+1, 'ABCD', 23000);
+INSERT INTO HoaDon(KhachHangId, TenHoaDon, MaGiaoDich, ThoiGianTao, ThoiGianCapNhat, GhiChu, TongTien) VALUES (3, 'HDCP', '20241008_003', SYSDATE, SYSDATE+1, 'ABCD', 45000);
+
+-- them du lieu cho bang ChiTietHoaDon
+INSERT INTO ChiTietHoaDon(HoaDonId, SanPhamId, SoLuong, DVT, ThanhTien) VALUES (1, 3, 2, 'Quả', 72000);
+INSERT INTO ChiTietHoaDon(HoaDonId, SanPhamId, SoLuong, DVT, ThanhTien) VALUES (2, 1, 3, 'Cái', 69000);
+INSERT INTO ChiTietHoaDon(HoaDonId, SanPhamId, SoLuong, DVT, ThanhTien) VALUES (3, 6, 2, 'Hộp', 90000);
+
+-- select
+SELECT * FROM LoaiSanPham;
+SELECT * FROM SanPham;
+SELECT * FROM KhachHang;
+SELECT * FROM HoaDon;
+SELECT * FROM ChiTietHoaDon;
+
+
+-- truy van 1!:
+SELECT l.TenLoaiSanPham, p.TenSanPham, p.GiaThanh, p.MoTa, p.NgayHetHan, p.KyHieuSanPham FROM SanPham p
+JOIN LoaiSanPham l ON p.LoaiSanPhamId = l.LoaiSanPhamId;
+
+-- truy van 2
+SELECT l.TenLoaiSanPham, p.TenSanPham, p.GiaThanh, p.MoTa, p.NgayHetHan, p.KyHieuSanPham FROM SanPham p
+JOIN LoaiSanPham l ON p.LoaiSanPhamId = l.LoaiSanPhamId WHERE l.TenLoaiSanPham ='Rau';
+
+-- truy van 3:
+SELECT hd.MaGiaoDich, hd.TenHoaDon, l.TenLoaiSanPham FROM HoaDon hd
+JOIN ChiTietHoaDon ct ON ct.HoaDonId = hd.HoaDonId
+JOIN SanPham p ON p.SanPhamId = ct.SanPhamId
+JOIN LoaiSanPham l ON p.LoaiSanPhamId = l.LoaiSanPhamId WHERE l.TenLoaiSanPham ='Rau';
+
+-- truy van 4:
+SELECT SUM(TongTien) AS TongHoaDon FROM HoaDon WHERE TRUNC(ThoiGianTao) = TO_DATE('2024-10-07', 'YYYY/MM/DD');
+
+-- truy van 5:
+SELECT hd.HoaDonId, hd.TenHoaDon, SUM(ct.SoLuong) AS TongSanPham, p.TenSanPham FROM HoaDon hd
+JOIN ChiTietHoaDon ct ON ct.HoaDonId = hd.HoaDonId
+JOIN SanPham p ON p.SanPhamId = ct.SanPhamId
+GROUP BY hd.HoaDonId, hd.TenHoaDon, p.TenSanPham
+
+--------------
+Database first
+Scaffold-DbContext "User Id=TEST; Password=12345678;Data Source=localhost:1521/mypdb;" Oracle.EntityFrameworkCore -Tables 1233131.TABLE_LOAISANPHAM, 1233131.TABLE_SANPHAM, 1233131.TABLE_KHACHHANG, 1233131.TABLE_HOADON, 1233131.TABLE_CHITIETHOADON -OutputDir Models -Context ApplicationDbContext
+------------
+ConnectionString
+    "OrclDb": "Data Source=(DESCRIPTION=(ADDRESS_LIST=(ADDRESS=(PROTOCOL=TCP)(HOST=localhost)(PORT=1521)))(CONNECT_DATA=(SERVER=1233131)(SERVICE_NAME=mypdb)));User Id=TEST;Password=12345678;"
+
